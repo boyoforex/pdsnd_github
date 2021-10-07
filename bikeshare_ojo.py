@@ -233,7 +233,7 @@ def display_rawdata(df):
 def main():
     # Ensure the user wants to run the program
     print('\nHello! Trust you\'re doing great today.')
-#This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+#Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
     asci_image = '''
     
                                  $"   *.      *bike*
