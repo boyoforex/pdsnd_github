@@ -268,7 +268,7 @@ $       $$$$$       $   4$$$$$$$     L       *$$$"      4
     while(go_ahead not in ['yes','no']):
         print("Sorry, I didn't catch that. Try again, type yes or no")
     while(go_ahead=='no'):
-        print("Bye for")
+        print("Thanks for your time, Bye for now")
         break
     while (go_ahead=='yes'):
         city, month, day = get_filters()
@@ -288,6 +288,7 @@ $       $$$$$       $   4$$$$$$$     L       *$$$"      4
             print("Wrong Input, Please check spelling and type either yes or no")
             restart = input('\nWould you like to rerun the program? Enter yes or no.\n').lower()
         if restart == 'no':
+            print("Thanks for your time, Bye for now!")
             break
 
 
