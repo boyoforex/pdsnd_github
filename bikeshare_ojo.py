@@ -7,12 +7,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-'''
-To check the user input against what the program expects to receive, I created some list of correct answers for city, month and day. Also, I created a list of human-friendly time.
-
-'''
 
 #Creat lists of expected user inputs
+>>>>>>> refactoring
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -243,8 +240,16 @@ def display_rawdata(df):
 #Main part of the program
 def main():
     # Ensure the user wants to run the program
+<<<<<<< HEAD
     print('\nHello! Trust you\'re doing great today.')
 #Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+||||||| f5df5a4
+    print('\nHello! Trust you\'re doing great today.')
+
+=======
+    priint('\nHello! Trust you\'re doing great today.')
+#Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+>>>>>>> refactoring
     asci_image = '''
     
                                  $"   *.      *bike*
