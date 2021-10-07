@@ -3,18 +3,12 @@ import time
 import pandas as pd
 import numpy as np
 
-<<<<<<< HEAD
 #Create a dictionary with the name of city and corresponding data file
-||||||| parent of f4fbbbb (Resolve Conflict)
-#Create dictionary with city names and data
-=======
-# Create a dictionary with the name of city and corresponding data file
->>>>>>> f4fbbbb (Resolve Conflict)
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-#Creat lists of expected user inputs
+#Create lists of expected user inputs
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -246,8 +240,9 @@ def display_rawdata(df):
 def main():
     # Ensure the user wants to run the program
 #Python ACII Image from: https://www.asciiart.eu/sports-and-outdoors/cycling
-    priint('\nHello! Trust you\'re doing great today.')
-    asci_image = '''
+    print('\nHello! Trust you\'re doing great today.')
+
+asci_image = '''
     
                                  $"   *.      *bike*
               d$$$$$$$P"                  $    J
