@@ -241,8 +241,16 @@ def display_rawdata(df):
 def main():
     # Ensure the user wants to run the program
 <<<<<<< HEAD
+<<<<<<< HEAD
     print('\nHello! Trust you\'re doing great today.')
 #Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+||||||| f5df5a4
+    print('\nHello! Trust you\'re doing great today.')
+
+=======
+    priint('\nHello! Trust you\'re doing great today.')
+#Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+>>>>>>> refactoring
 ||||||| f5df5a4
     print('\nHello! Trust you\'re doing great today.')
 
