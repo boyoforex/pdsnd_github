@@ -1,10 +1,14 @@
 import time
 import pandas as pd
 import numpy as np
-
+# Create a dictionary with the name of city and corresponding data file
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+'''
+To check the user input against what the program expects to receive, I created some list of correct answers for city, month and day. Also, I created a list of human-friendly time.
+
+'''
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -229,7 +233,7 @@ def display_rawdata(df):
 def main():
     # Ensure the user wants to run the program
     print('\nHello! Trust you\'re doing great today.')
-
+#This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
     asci_image = '''
     
                                  $"   *.      *bike*
