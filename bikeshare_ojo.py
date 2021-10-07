@@ -9,7 +9,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 #Creat lists of expected user inputs
->>>>>>> 7d7597c (Add sectional comments)
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
