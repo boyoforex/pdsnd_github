@@ -3,7 +3,13 @@ import time
 import pandas as pd
 import numpy as np
 
+<<<<<<< HEAD
 #Create a dictionary with the name of city and corresponding data file
+||||||| parent of f4fbbbb (Resolve Conflict)
+#Create dictionary with city names and data
+=======
+# Create a dictionary with the name of city and corresponding data file
+>>>>>>> f4fbbbb (Resolve Conflict)
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -239,8 +245,8 @@ def display_rawdata(df):
 #Main part of the program
 def main():
     # Ensure the user wants to run the program
-    print('\nHello! Trust you\'re doing great today.')
-#Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
+#Python ACII Image from: https://www.asciiart.eu/sports-and-outdoors/cycling
+    priint('\nHello! Trust you\'re doing great today.')
     asci_image = '''
     
                                  $"   *.      *bike*
