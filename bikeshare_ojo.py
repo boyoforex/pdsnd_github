@@ -1,14 +1,22 @@
+#Import needed python modules
 import time
 import pandas as pd
 import numpy as np
 
+#Create dictionary with city names and data
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
+#Creat lists of expected user inputs
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+
+#Create list of 12-hour human-friendly time hour
 hours = ["12 AM", "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM"]
+
+#Function to get user input to filter data
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -45,7 +53,7 @@ def get_filters():
 
     return city, month, day
 
-
+#Function to filter database based on user preference
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -73,6 +81,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
     return df
 
+#Function to convert computed time to user-friendly output
 def seconds2str(time_seconds):
     """
     Function to transform large time value in seconds to corresponding weeks, days, hours, minutes and seconds.
@@ -101,6 +110,7 @@ def seconds2str(time_seconds):
         sec_str += '{} seconds'.format(sec)
     return sec_str
 
+#Function to calculate descriptive statistics for user-selected data
 def cal_stats(df,city, month, day):
     start_time = time.time()
     """Displays statistics on the most frequent times of travel."""
@@ -198,7 +208,8 @@ def cal_stats(df,city, month, day):
     print('\nTHIS IS THE END OF THE STATISTICS BASED ON YOUR INPUT CRITERIA.THAT MUST BE A LOT OF INFORMATION!\n')
     print("\nThe entire computation took %s seconds." % (time.time() - start_time))
     print('+'*40)
-    
+
+#Function to manage raw data request and output
 def display_rawdata(df):
     '''This function finds out if the user wants to view the raw data and if so, it displays it five lines per time.
     After displaying five lines, the user is asked if they would like to view the next five lines until they say no or the end is reached.
@@ -225,7 +236,7 @@ def display_rawdata(df):
 
 
 
-
+#Main part of the program
 def main():
     # Ensure the user wants to run the program
     print('\nHello! Trust you\'re doing great today.')
