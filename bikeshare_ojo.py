@@ -3,12 +3,12 @@ import time
 import pandas as pd
 import numpy as np
 
-# Create a dictionary with the name of city and corresponding data file
+#Create a dictionary with the name of city and corresponding data file
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-#Creat lists of expected user inputs
+#Create lists of expected user inputs
 city_list = ['new york city', 'chicago', 'washington']
 month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
 day_list = ['all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -239,7 +239,7 @@ def display_rawdata(df):
 #Main part of the program
 def main():
     # Ensure the user wants to run the program
-    priint('\nHello! Trust you\'re doing great today.')
+    print('\nHello! Trust you\'re doing great today.')
 #Looking for ways to make the output impressive. This is python ASCII ART inspiration from https://asciiart.website/index.php?art=transportation/bicycles
     asci_image = '''
     
