@@ -240,7 +240,7 @@ def display_rawdata(df):
 def main():
     # Ensure the user wants to run the program
     print('\nHello! Trust you\'re doing great today.')
-
+#Python ACII Image from: https://www.asciiart.eu/sports-and-outdoors/cycling
     asci_image = '''
     
                                  $"   *.      *bike*
